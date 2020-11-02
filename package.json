@@ -1,0 +1,29 @@
+{
+  "name": "twoweek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-typograf": "^4.0.3",
+    "webpack-stream": "^6.1.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "browser-sync": "^2.26.12",
+    "cssnano": "^4.1.10",
+    "del": "^6.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "jquery": "^3.5.1",
+    "postcss": "^8.1.1"
+  }
+}
