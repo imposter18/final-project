@@ -23,14 +23,15 @@ header {
       font-size: 16px;
       line-height: 21px;
       text-decoration-line: underline;
-      color: #ffffff;
+      color: #fff;
     }
   }
   .header__content {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    // overflow-x: scroll;
     width: 615px;
     height: 31px;
     left: 152px;
@@ -60,6 +61,61 @@ header {
     left: -25px;
     fill: #ffffff;
   }
-  @media (max-width: 1199px) and (min-width: 320px) {
+}
+
+@media (max-width: 1199px) and (min-width: 320px) {
+  body {
+    width: auto;
+  }
+
+  header {
+    width: auto;
+    margin: auto;
+    background: black;
+    // position: relative;
+  }
+  #bar {
+    width: 95vw;
+    left: 15px;
+    // margin-left: 15px;
+  }
+  #content {
+    display: inline-block;
+    width: auto;
+  }
+  #cart .cart__img svg {
+    left: -30px;
+    top: 3px;
+  }
+  #cart a {
+    display: none;
+  }
+
+  header #nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    mask-image: linear-gradient(
+      90deg,
+      transparent 0,
+      rgba(0, 0, 0, 0.25) 9px,
+      #000 18px,
+      #000 calc(100% - 18px),
+      rgba(0, 0, 0, 0.25) calc(100% - 9px),
+      transparent
+    );
+    a {
+      flex: 0 0 auto;
+    }
+  }
+  #wrapper {
+    max-width: 60vw;
+    min-width: 100px;
+    position: absolute;
+    top: 7px;
+    left: 65px;
+  }
+  .header__item {
+    display: inline-block;
   }
 }
