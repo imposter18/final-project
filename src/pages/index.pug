@@ -8,12 +8,18 @@ html(lang="ru")
         link(rel="stylesheet", href="./styles/style.css")
         
     body
-        //- include ./pug/header.pug
-        //- .mainSlider
-        //-     .mainSlider__list
-        //-         img(src="./assets/img/image2.jpg", alt="shuz reeebok")
-        //-     .mainSlider__list
-        //-         img(src="./assets/img/image.jpg", alt="shuz reeebok")
+        include ./pug/header.pug
+        .slick__wraper
+            .slick
+                button(type='button' class='next' )
+                        include ../assets/icon/arr-right.svg
+                button(type='button' class='prev' )
+                        include ../assets/icon/arr-right.svg
+                .mainSlider
+                    .mainSlider__list
+                        img(src="./assets/img/image2.jpg", alt="shuz reeebok")
+                    .mainSlider__list
+                        img(src="./assets/img/image.jpg", alt="shuz reeebok")
 
 
         include ./pug/footer.pug

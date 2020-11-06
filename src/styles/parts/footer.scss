@@ -46,28 +46,32 @@ footer {
     }
   }
 
-  .footer__nav-contact {
-    // position: absolute;
-    top: 146px;
-    left: 9px;
-    .footer__nav__email {
-      color: #fff;
-      margin-bottom: 8px;
-    }
-    .phone-title {
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 21px;
-      color: #ffffff;
-    }
-
-    .phone-subtitle {
-      font-size: 13px;
-      line-height: 17px;
-      color: #ffffff;
-      opacity: 0.75;
-    }
+  // .footer__nav-contact {
+  // position: absolute;
+  // top: 146px;
+  // left: 9px;
+  .footer__nav__email {
+    color: #fff;
+    margin-bottom: 8px;
+    margin-top: 26px;
+    margin-left: 10px;
   }
+  .phone-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    margin-left: 10px;
+  }
+
+  .phone-subtitle {
+    font-size: 13px;
+    line-height: 17px;
+    color: #ffffff;
+    opacity: 0.75;
+    margin-left: 10px;
+  }
+  // }
 
   .footer__bottom {
     display: flex;
@@ -89,15 +93,53 @@ footer {
   body {
     width: auto;
   }
-  .footer__container {
-    width: auto;
-  }
-  .footer__content {
-    width: auto;
-  }
-  .footer__nav {
-    width: auto;
-    display: flex;
-    flex-direction: column;
+  footer {
+    .footer__container {
+      width: auto;
+      height: auto;
+    }
+    .footer__content {
+      width: auto;
+      height: auto;
+      padding: 0;
+      padding-left: 10px;
+    }
+    .footer__nav {
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      padding-top: 12px;
+    }
+    .nav-group-title {
+      margin-top: 20px;
+    }
+    .nav-group-items {
+      padding-left: 10px;
+    }
+    .footer__nav__email {
+      padding-left: 10px;
+    }
+    .phone-title {
+      padding-left: 10px;
+    }
+    .phone-subtitle {
+      padding-left: 10px;
+    }
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      margin-top: 35px;
+      a {
+        margin: 0;
+      }
+    }
+    .bottom__develop {
+      margin-top: 12px;
+      margin-bottom: 72px;
+    }
+    .bottom__privacy {
+      margin-top: 12px;
+    }
   }
 }

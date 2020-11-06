@@ -1,14 +1,5 @@
 header {
-  position: relative;
-  height: 48px;
-  max-width: 1440px;
-  margin: auto;
-
-  background: linear-gradient(
-    269.92deg,
-    rgba(0, 0, 0, 0) 0.07%,
-    #0c0c0c 99.93%
-  );
+  position: absolute;
 
   .header__bar {
     position: absolute;
@@ -62,10 +53,29 @@ header {
     fill: #ffffff;
   }
 }
+.header__wraper {
+  position: relative;
+  z-index: 10;
+  height: 48px;
+  width: 1440px;
+  margin: auto;
+  left: 338px;
+
+  background: linear-gradient(
+    269.92deg,
+    rgba(0, 0, 0, 0) 0.07%,
+    #0c0c0c 99.93%
+  );
+}
 
 @media (max-width: 1199px) and (min-width: 320px) {
   body {
     width: auto;
+  }
+  .header__wraper {
+    width: auto;
+    margin: auto;
+    background: black;
   }
 
   header {

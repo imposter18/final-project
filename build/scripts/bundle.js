@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("$(document).on('DOMContentLoaded', () => {\r\n    $('.mainSlider').slick();\r\n});\r\n  \n\n//# sourceURL=webpack:///./src/scripts/index.js?");
+eval("$(document).on('DOMContentLoaded', () => {\r\n    $('.mainSlider').slick({\r\n    prevArrow: $('.prev'),\r\n      nextArrow: $('.next'),\r\n    });\r\n});\r\n  \n\n//# sourceURL=webpack:///./src/scripts/index.js?");
 
 /***/ })
 

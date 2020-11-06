@@ -1,4 +1,7 @@
 $(document).on('DOMContentLoaded', () => {
-    $('.mainSlider').slick();
+    $('.mainSlider').slick({
+    prevArrow: $('.prev'),
+      nextArrow: $('.next'),
+    });
 });
   
