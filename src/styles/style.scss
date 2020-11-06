@@ -3,14 +3,20 @@
 @import "./parts/footer.scss";
 
 body {
-  position: relative;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "slick slick slick"
+    "footer footer footer";
+  grid-template-rows: 0px;
+  // grid-template-columns: 0.5fr 1fr;
   margin: 0 auto;
   width: 1440;
   font-family: "PT Sans", sans-serif;
 }
-// .slick__wraper {
-//   position: absolute;
-// }
+.slick__wraper {
+  grid-area: slick;
+}
 
 .slick {
   position: relative;
