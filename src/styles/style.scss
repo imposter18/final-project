@@ -1,46 +1,210 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "./parts/header.scss";
 @import "./parts/footer.scss";
+@import "./parts/slider.scss";
 
 body {
   display: grid;
   grid-template-areas:
     "header header header"
     "slick slick slick"
+    "homePage__nav homePage__nav homePage__nav"
+    "content1 content2 content2"
+    " content3 content3 content3"
     "footer footer footer";
   grid-template-rows: 0px;
-  // grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: 633px auto auto;
   margin: 0 auto;
-  width: 1440;
-  font-family: "PT Sans", sans-serif;
-}
-.slick__wraper {
-  grid-area: slick;
-}
-
-.slick {
-  position: relative;
   width: 1440px;
-  height: 600px;
-  margin: auto;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+}
+.homePage__nav {
+  grid-area: homePage__nav;
+  width: 1095px;
+  height: 193px;
+  display: flex;
+  justify-content: space-between;
+  margin: 48px 193px 64px 152px;
+  .nav-group-items {
+    display: flex;
+    flex-direction: column;
+    margin: 8px auto 8px 9px;
+    a {
+      margin-bottom: 8px;
+    }
+  }
+  .nav-group-items a {
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #4541fe;
+    margin-top: 2px;
+  }
+  .nav-group-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #4541fe;
+  }
+  .nav-group-text {
+    margin-right: 29px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    span {
+      font-weight: bold;
+    }
+  }
+  .nav-group-text:not(:first-child) {
+    margin-top: 18px;
+  }
+}
+// content
+.homePage__content1 {
+  grid-area: content1;
+  margin-left: 152px;
+  // margin-top: 34px;
+  .homePage-card-top {
+    height: 320px;
+    width: 464px;
+    background: #ffa88c;
+  }
+  .homePage-card-bottom {
+    height: 160px;
+    width: 464px;
+    background: #7482ff;
+    margin-top: 24px;
+  }
 }
 
-.mainSlider {
-  margin: auto;
-  width: auto;
-  height: auto;
+.homePage__content2 {
+  grid-area: content2;
+  // margin-top: 34px;
+  .homePage-card-shoes {
+    height: 504px;
+    width: 655px;
+    background: #ffe9fd;
+  }
 }
-.slick-arrow {
-  background: none;
-  position: absolute;
+.homePage__content3 {
+  grid-area: content3;
+  margin: 24px auto 72px auto;
+  background-color: #f3f3f3;
+  position: relative;
+
+  .homePage-preorder {
+    height: 480px;
+    width: 1136px;
+    display: grid;
+    grid-template-columns: 318px 500px 318px;
+    object-fit: contain;
+    overflow: hidden;
+    img:first-child {
+      position: relative;
+      right: 183px;
+    }
+    img {
+      position: relative;
+      bottom: 45px;
+    }
+  }
+}
+.homePage__title a {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 41px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+.homePage__subtitle {
+  font-size: 16px;
+  line-height: 21px;
+}
+.homePage-card-bottom-title {
+  a {
+    color: #ffe9fd;
+  }
+  padding-top: 24px;
+  padding-left: 16px;
+}
+.homePage-card-bottom-subtitle {
+  color: #ffffff;
+  padding-top: 8px;
+  padding-left: 16px;
+}
+.homePage-card-title {
+  padding-top: 24px;
+  padding-left: 16px;
+}
+.homePage-card-subtitle {
+  position: relative;
+  padding-top: 8px;
+  padding-left: 16px;
   z-index: 10;
-  top: 50%;
 }
-
-.next {
-  right: 0;
+.homePage-card-img img {
+  position: relative;
+  bottom: 39px;
+  left: 13px;
+  z-index: 1;
 }
+.homePage-card-shoes-title {
+  padding-top: 24px;
+  padding-left: 23px;
+}
+.homePage-card-shoes-subtitle {
+  padding-top: 8px;
+  padding-left: 23px;
+}
+.homePage-card-shoes-img img {
+  position: relative;
+  bottom: 86px;
+  left: 30px;
+}
+.homePage-preorder-title {
+  position: absolute;
+  padding-top: 24px;
+  padding-left: 16px;
+  z-index: 10;
+}
+.homePage-preorder-subtitle {
+  position: absolute;
+  padding-top: 8px;
+  padding-left: 16px;
+  z-index: 10;
+  top: 64px;
+}
+@media (max-width: 1199px) and (min-width: 320px) {
+  body {
+    grid-template-areas:
+      "header "
+      "slick "
+      "homePage__nav "
+      "content1"
+      "content2"
+      " content3 "
+      "footer";
+  }
+  .homePage__nav {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  #navGroup {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 24px;
+    padding-left: 16px;
+  }
 
-.prev {
-  left: 0;
+  .footer__nav-group {
+    display: flex;
+    flex-direction: column;
+  }
 }
