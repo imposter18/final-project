@@ -191,6 +191,7 @@ body {
     grid-template-columns: 100%;
     width: 100vw;
   }
+
   .homePage__nav {
     width: auto;
     height: auto;
@@ -201,32 +202,33 @@ body {
     margin-top: 25px;
     grid-column-gap: 11px;
     margin-bottom: 22px;
-  }
-  #navGroup {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
 
-  .footer__nav-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 14px;
-  }
-  .homePage__nav .nav-group-text:not(:first-child) {
-    margin-top: 16px;
-  }
-  .footer__nav-group:not(:first-child) {
-    margin-top: 10px;
-  }
-  .homePage__nav .nav-group-items {
-    a {
-      margin-top: 5px;
-      margin-bottom: 2px;
+    .navGroup {
+      grid-column-start: 1;
+      grid-column-end: 3;
     }
-    margin: 7px 0 0 8px;
-  }
-  .homePage__nav .nav-group-title {
-    margin-top: 0px;
+
+    .footer__nav-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 23px;
+    }
+    .homePage__nav .nav-group-text:not(:first-child) {
+      margin-top: 16px;
+    }
+    .footer__nav-group:not(:first-child) {
+      margin-top: 10px;
+    }
+    .nav-group-items {
+      margin: 13px auto -15px 9px;
+      a {
+        margin-top: 5px;
+        margin-bottom: 2px;
+      }
+    }
+    .homePage__nav .nav-group-title {
+      margin-top: 0px;
+    }
   }
   .homePage__content1 {
     margin: 0;
@@ -252,6 +254,53 @@ body {
       left: -38px;
       z-index: 1;
       width: 383px;
+    }
+  }
+  .homePage__content2 {
+    width: 100%;
+    overflow: hidden;
+    height: 370px;
+    .homePage-card-shoes {
+      width: 100%;
+    }
+    .homePage-card-shoes-title {
+      width: 100%;
+      padding-left: 17px;
+    }
+    .homePage-card-shoes-subtitle {
+      padding-left: 17px;
+    }
+    .homePage-card-shoes-img img {
+      width: 414px;
+      height: 332px;
+      bottom: 61px;
+      left: 10px;
+    }
+  }
+  .homePage__content3 {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    height: 480px;
+    margin: 0;
+  }
+  .homePage-preorder-subtitle {
+    top: 106px;
+  }
+  .homePage__content3 .homePage-preorder {
+    width: 524.2px;
+    height: 174.73px;
+    transform: rotate(30deg);
+    grid-template-columns: 174.73px 174.73px 174.73px;
+    top: 222px;
+    position: relative;
+    right: 109px;
+    img {
+      width: 174.73px;
+      height: 174.73px;
+    }
+    img:first-child {
+      right: 0;
     }
   }
 }
