@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="./styles/slick.css")
+        link(rel="stylesheet", href="./styles/style.css")
+    body
+        include ./pug/headerWhite.pug
+        article
+            .productCard__content
+                .productCard__about
+                    .productCard__about__title
+                        .productCard__about__title-text <h1> Maison Margiela Fusion Low Sneakers
+                        .productCard__about__subtitle-text Кроссовки 
+                    .productCard__about__buy
+                        .productCard__switch#group
+                            .productCard__switch-title Цвет
+                            .productCard__switch-one
+                                input(type="checkbox"  class="Card__switch qwerty" id="switch__card")
+                                label(for="switch__card")
+                            .productCard__switch-two
+                                input(type="checkbox" class=" Card__switch qwerty" id="switch__card-two")
+                                label(for="switch__card-two")
+                        .productCard__switch__size#group-checkbox
+                            .productCard__switch__size-title Размер US
+                            .productCard__switch__size-one
+                                input(type="checkbox"  class=" Card__switch" id="switch__size-one")
+                                label(for="switch__size-one")
+                            .productCard__switch__size-two
+                                input(type="checkbox"  class=" Card__switch" id="switch__size-two")
+                                label(for="switch__size-two")
+                            .productCard__switch__size-three
+                                input(type="checkbox"  class=" Card__switch" id="switch__size-three")
+                                label(for="switch__size-three")
+                            .productCard__switch__size-four
+                                input(type="checkbox"  class=" Card__switch" id="switch__size-four")
+                                label(for="switch__size-four")
+                        .productCard__about__buy-table
+                            a(href="#openModal") Таблица размеров
+                            #openModal.modalDialog
+                                .modalWrapper
+                                    a(href="#close" title="Закрыть" class="close") 
+                                        include ../assets/icon/cross.svg
+                                    <h2> Таблица размеров</h2>
+                                    .table__size
+                                        table
+                                            tr
+                                                th US
+                                                td 4
+                                                td 4,5
+                                                td 5
+                                                td 5,5
+                                                td 6
+                                                td 6,5
+                                                td 7
+                                                td 7,5
+                                            tr
+                                                th UK
+                                                td 3,5
+                                                td 4
+                                                td 4,5
+                                                td 5
+                                                td 5,5
+                                                td 6
+                                                td 6,5
+                                                td 7
+                                            tr
+                                                th EU
+                                                td 36
+                                                td 37
+                                                td 38
+                                                td 39
+                                                td 40
+                                                td 41
+                                                td 42
+                                                td 43
+                                                
+                        .productCard__buy__button
+                            form(action="#")
+                                button Купить, 92 000 ₽        
+                    .productCard__about__info
+                        .productCard__about__info-title-one
+                            .about__info-card Материал
+                            .about__info-card-text Кожа, текстиль
+                        .productCard__about__info-title-two
+                            .about__info-card Страна-производитель
+                            .about__info-card-text Италия
+                        .productCard__about__info-text
+                            .about__info-card Описание
+                            .about__info-text
+                                | Деконструктивный и авангардный дизайн с уникальными концепциями и нетрадиционным мастерством.
+                                p В качестве материала используются два вида кожи. Верх дополнен деталями из сетчатого материала и текстиля. 
+                                p Грубые и многослойные кроссовки показывают отличие от традиционного аккуратного стиля создания обуви. Они оснащены раскрашенной вручную резиновой подошвой с брызгами и потеками. 
+                                p Оригинальная слегка асимметричная система шнуровки и фирменный стежок на заднике завершают уникальный внешний вид.
+                            
+                        .productCard__about__info-parts
+                            .about__info-card Детали
+                            .about__info-parts-text
+                                | — Два вида кожи<br>— Детали из текстиля<br>— Неординарная шнуровка<br>— Перфорация на мыске<br>— Стежок на заднике<br>— Фигурная резиновая подошва<br>— Цепкая подметка<br>— Окрашивание с брызгами и потеками<br>— Пестрая расцветка
+                .productCard__slider__one
+                    .productCard__slider__one-main
+                        .slider__one-main-img
+                            img(src="./assets/img/sliderOne/img.jpg", alt="Maison Margiela shoes")
+                        .slider__one-main-img
+                            img(src="./assets/img/sliderOne/img1.jpg", alt="Maison Margiela shoes")
+                        .slider__one-main-img
+                            img(src="./assets/img/sliderOne/img2.jpg", alt="Maison Margiela shoes")
+                        .slider__one-main-img
+                            img(src="./assets/img/sliderOne/img3.jpg", alt="Maison Margiela shoes")
+                    .productCard__slider__one-support
+                        .slider__one-support-img#support-img
+                            img(src="./assets/img/sliderOne/img.jpg", alt="Maison Margiela shoes")
+                        .slider__one-support-img#support-img
+                            img(src="./assets/img/sliderOne/img1.jpg", alt="Maison Margiela shoes")
+                        .slider__one-support-img#support-img
+                            img(src="./assets/img/sliderOne/img2.jpg", alt="Maison Margiela shoes")
+                        .slider__one-support-img#support-img
+                            img(src="./assets/img/sliderOne/img3.jpg", alt="Maison Margiela shoes")
+
+
+        include ./pug/footer.pug
+        
+        script(src="https://code.jquery.com/jquery-3.5.1.min.js")
+        script(src="./assets/slick.min.js")
+        script(src= "./scripts/bundle.js")

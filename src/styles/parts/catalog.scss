@@ -1,0 +1,127 @@
+article {
+  margin: auto;
+  width: 1440px;
+}
+.catalog__content {
+  margin: auto;
+  display: grid;
+  grid-template-rows: 97px auto;
+}
+.catalog__head {
+  width: 1440px;
+  height: 160px;
+  background: #000000;
+}
+.catalog__item {
+  display: inline-grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 240px);
+  grid-column-gap: 32px;
+  grid-row-gap: 48px;
+  margin-left: 152px;
+}
+.catalog__head__title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 41px;
+  padding-left: 152px;
+  padding-top: 24px;
+}
+.catalog__card {
+  display: inline-grid;
+}
+.catalog__card-title {
+  margin-top: 8px;
+  a {
+    font-weight: bold;
+    color: #000000;
+  }
+}
+.catalog__card-subtitle {
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+  margin-top: 4px;
+}
+
+.catalog__card-price {
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.catalog__card-img {
+  width: 240px;
+  height: 240px;
+}
+.page__nav {
+  margin-left: 151px;
+  margin-top: 64px;
+  margin-bottom: 68px;
+}
+.page__nav-titlt {
+  font-size: 13px;
+  line-height: 17px;
+  color: #666666;
+  margin-bottom: 2px;
+}
+.page__nav-counter {
+  // display: grid;
+  a {
+    text-decoration: none;
+    color: #666666;
+  }
+  span {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: bold;
+    color: #000000;
+  }
+}
+@media (max-width: 1199px) and (min-width: 320px) {
+  article {
+    width: 100%;
+  }
+  .catalog__head {
+    width: 100%;
+  }
+  .catalog__content {
+    grid-template-rows: 83px auto;
+  }
+  .catalog__item {
+    grid-template-columns: 136px 136px;
+    margin-left: 16px;
+    grid-column-gap: 16px;
+    grid-row-gap: 32px;
+    :nth-child(n + 15) {
+      display: none;
+    }
+  }
+  .catalog__card-img {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 136px;
+      height: 136px;
+    }
+  }
+  .catalog__card {
+    width: 100%;
+  }
+  .catalog__head__title {
+    padding-left: 17px;
+    padding-top: 18px;
+  }
+  .catalog__card-title {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .catalog__card-price {
+    margin-top: 7px;
+  }
+  .page__nav {
+    margin-left: 15px;
+    margin-top: 39px;
+    margin-bottom: 41px;
+  }
+}
