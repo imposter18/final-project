@@ -18,9 +18,7 @@ a {
 .slick-slide:focus {
   outline: none;
 }
-.slick-current {
-  opacity: 0.3;
-}
+
 .productCard__content {
   width: 1136px;
   margin: auto;
@@ -91,6 +89,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  .slick-current {
+    opacity: 0.3;
+  }
 }
 .productCard__slider__one-main {
   width: 656px;
@@ -132,12 +133,16 @@ a {
   top: 31px;
   right: 25px;
 }
-// чекбоксы
-// .productCard__about__buy label::after::before:hover {
-//   border: 1px solid #666666;
-//   box-sizing: border-box;
-//   border-radius: 8px;
-// }
+.productCard__about__buy label:hover::after {
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.productCard__about__buy label:hover::before {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
 .productCard__switch {
   width: 402px;
   height: 32px;
@@ -523,4 +528,72 @@ a {
 }
 .productCard__buy__button button:focus {
   outline: none;
+}
+// слайдер 2
+.productCard__slider__two {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 43px;
+}
+.productCard__slider__two-title h2 {
+  font-size: 25px;
+  line-height: 32px;
+}
+.productCard__slider__two-slick {
+  width: 1088px;
+  height: 344px;
+  margin-left: 39px;
+  margin-top: 25px;
+  margin-bottom: 64px;
+  .slider__two-slick {
+    width: 272px;
+  }
+}
+.slider__two-slick {
+  width: 272px;
+}
+.slick-slide {
+  margin: 0;
+}
+// cтрелки
+.productCard__slider__two {
+  position: relative;
+  svg {
+    fill: #f0ad00;
+  }
+  button {
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    svg {
+      fill: #000000;
+      height: 23.99999809265139px;
+      width: 28.235288619995142px;
+    }
+  }
+}
+.productCard__next {
+  right: -43px;
+  top: 48.5%;
+  transform: rotate(180deg);
+}
+.productCard__prev {
+  top: 49.5%;
+  left: -43px;
+}
+@media (max-width: 1199px) and (min-width: 320px) {
+  .productCard__content {
+    grid-template-columns: 100%;
+  }
+  .productCard__slider__one {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .productCard__about {
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
 }

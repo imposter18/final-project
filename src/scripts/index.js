@@ -5,8 +5,6 @@ $(document).on('DOMContentLoaded', () => {
     });
     $('.productCard__slider__one-main').slick({
       slidesToShow: 1,
-      // prevArrow: $('.prev'),
-      // nextArrow: $('.next'),
       fade: true,
       centerMode: false,
       arrows: false, 
@@ -30,6 +28,14 @@ $(document).on('DOMContentLoaded', () => {
       if ($(this).is(':checked')) {
          $('#group-checkbox input:checkbox').not(this).prop('checked', false);
       }
+    });
+    $('.productCard__slider__two-slick').slick({
+      prevArrow: $('.productCard__prev'),
+        nextArrow: $('.productCard__next'),
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      centerMode: false,
     });
 });
   
