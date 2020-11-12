@@ -36,12 +36,18 @@
   :hover {
     cursor: pointer;
   }
+  svg {
+    fill: #ffffff;
+  }
 }
 
 .prev {
   left: 16px;
   :hover {
     cursor: pointer;
+  }
+  svg {
+    fill: #ffffff;
   }
 }
 

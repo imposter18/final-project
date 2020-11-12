@@ -31,11 +31,22 @@ $(document).on('DOMContentLoaded', () => {
     });
     $('.productCard__slider__two-slick').slick({
       prevArrow: $('.productCard__prev'),
-        nextArrow: $('.productCard__next'),
+      nextArrow: $('.productCard__next'),
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
       centerMode: false,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            
+          }
+        }
+      ]
     });
 });
   
