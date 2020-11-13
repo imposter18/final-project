@@ -6,4 +6,55 @@ html(lang="en")
         title Document
         link(rel="stylesheet", href="./styles/style.css")
     body
-        
+        article.orderingWrapper
+            .ordering__content
+                .ordering__content__items
+                    .ordering__content__items-title <h1> Фетч <span>•</span> Оформление заказа
+                    .ordering__content__items-product
+                        .content__product__card
+                            .content__product__card-img
+                                img(src="./assets/img/shoes/img1.jpg", alt="shoes card")
+                            .content__product__card-title 
+                                a(href="#") Maison Margiela Fusion<br> Low Sneakers
+                                .content__product__card-subtitle Кроссовки
+                                .content__product__card-price 92 000 ₽
+                        .content__product__card
+                            .content__product__card-img
+                                img(src="./assets/img/shoes/img3.jpg", alt="shoes card")
+                            .content__product__card-title 
+                                a(href="#") Maison Margiela Fusion<br> Low Sneakers
+                                .content__product__card-subtitle Кроссовки
+                                .content__product__card-price 92 000 ₽
+                        .content__product__card
+                            .content__product__card-img
+                                img(src="./assets/img/shoes/img5.jpg", alt="shoes card")
+                            .content__product__card-title 
+                                a(href="#") Maison Margiela Fusion<br> Low Sneakers
+                                .content__product__card-subtitle Кроссовки
+                                .content__product__card-price 92 000 ₽
+                    .totalPrice
+                        .totalPrice-title 276 000 ₽
+                        .totalPrice-subtitle Доставка бесплатно
+                .ordering__content__form
+                    .form-buy
+                        form(action="#" method="post")
+                            .form-buy-one
+                                label(for="form-email") Эл. почта 
+                                input(type="email" id="form-email" name="user_name" placeholder="petrov@yandex.ru" required )
+                                .form-buy-subtitle <br> Пришлём чеки и трек-номер
+                            .form-buy-two
+                                label(for="form-phone") Телефон
+                                input(type="tel" id="form-phone" name="user_name" required placeholder="+7 999 275-12-37"  )
+                                .form-buy-subtitle <br> Менеджер позвонит, чтобы подтвердить заказ
+                            .form-buy-three
+                                label(for="form-city") Город 
+                                input(type="text" id="form-city" name="user_name" required placeholder="Москва" )
+                            .form-buy-four
+                                //- label(for="form-place") Адрес
+                                //- input(type="text" id="form-place" name="user_name" required )
+                                .form-buy-four-title Адрес
+                                textarea(placeholder="Тимирязевская, 32, квартира 99, вход со двора")
+                            .form-buy-button-bg
+                                .form-buy-button-text Бесплатная доставка&nbsp;курьером.<br> Оплата картой онлайн.
+                                button Оформить заказ, 276 000 ₽
+                    

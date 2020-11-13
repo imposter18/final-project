@@ -6,5 +6,68 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css"/>
   </head>
-  <body></body>
+  <body>
+    <article class="orderingWrapper">
+      <div class="ordering__content">
+        <div class="ordering__content__items">
+          <div class="ordering__content__items-title"><h1> Фетч <span>•</span> Оформление заказа</div>
+          <div class="ordering__content__items-product">
+            <div class="content__product__card">
+              <div class="content__product__card-img"><img src="./assets/img/shoes/img1.jpg" alt="shoes card"/></div>
+              <div class="content__product__card-title"> <a href="#">Maison Margiela Fusion<br> Low Sneakers</a>
+                <div class="content__product__card-subtitle">Кроссовки</div>
+                <div class="content__product__card-price">92 000 ₽</div>
+              </div>
+            </div>
+            <div class="content__product__card">
+              <div class="content__product__card-img"><img src="./assets/img/shoes/img3.jpg" alt="shoes card"/></div>
+              <div class="content__product__card-title"> <a href="#">Maison Margiela Fusion<br> Low Sneakers</a>
+                <div class="content__product__card-subtitle">Кроссовки</div>
+                <div class="content__product__card-price">92 000 ₽</div>
+              </div>
+            </div>
+            <div class="content__product__card">
+              <div class="content__product__card-img"><img src="./assets/img/shoes/img5.jpg" alt="shoes card"/></div>
+              <div class="content__product__card-title"> <a href="#">Maison Margiela Fusion<br> Low Sneakers</a>
+                <div class="content__product__card-subtitle">Кроссовки</div>
+                <div class="content__product__card-price">92 000 ₽</div>
+              </div>
+            </div>
+          </div>
+          <div class="totalPrice">
+            <div class="totalPrice-title">276 000 ₽</div>
+            <div class="totalPrice-subtitle">Доставка бесплатно</div>
+          </div>
+        </div>
+        <div class="ordering__content__form">
+          <div class="form-buy">
+            <form action="#" method="post">
+              <div class="form-buy-one">
+                <label for="form-email">Эл. почта </label>
+                <input type="email" id="form-email" name="user_name" placeholder="petrov@yandex.ru" required="required"/>
+                <div class="form-buy-subtitle"><br> Пришлём чеки и трек-номер</div>
+              </div>
+              <div class="form-buy-two">
+                <label for="form-phone">Телефон</label>
+                <input type="tel" id="form-phone" name="user_name" required="required" placeholder="+7 999 275-12-37"/>
+                <div class="form-buy-subtitle"><br> Менеджер позвонит, чтобы подтвердить заказ</div>
+              </div>
+              <div class="form-buy-three">
+                <label for="form-city">Город </label>
+                <input type="text" id="form-city" name="user_name" required="required" placeholder="Москва"/>
+              </div>
+              <div class="form-buy-four">
+                <div class="form-buy-four-title">Адрес</div>
+                <textarea placeholder="Тимирязевская, 32, квартира 99, вход со двора"></textarea>
+              </div>
+              <div class="form-buy-button-bg">
+                <div class="form-buy-button-text">Бесплатная доставка&nbsp;курьером.<br> Оплата картой онлайн.</div>
+                <button>Оформить заказ, 276 000 ₽</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
 </html>
