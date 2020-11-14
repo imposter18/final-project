@@ -11,13 +11,13 @@ header {
     rgba(0, 0, 0, 0) 0.07%,
     #0c0c0c 99.93%
   );
-
-  .header__bar {
-    position: absolute;
-    width: 1136px;
-    height: 31px;
-    left: 152px;
-    top: 8px;
+  #nav__black a:not(:first-child) {
+    margin-left: 22px;
+  }
+  #nav__black {
+    width: 519px;
+    display: flex;
+    justify-content: space-between;
     a {
       font-family: PT Sans;
       font-style: normal;
@@ -27,6 +27,16 @@ header {
       text-decoration-line: underline;
       color: #fff;
     }
+    a:hover {
+      color: #4541fe;
+    }
+  }
+  .header__bar {
+    position: absolute;
+    width: 1136px;
+    height: 31px;
+    left: 152px;
+    top: 8px;
   }
   .header__content {
     display: flex;
@@ -38,23 +48,27 @@ header {
     height: 31px;
     left: 152px;
     top: 8px;
-    nav a {
-      margin-left: 22px;
-    }
   }
-  .header__item {
+  .header__item a {
     font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
     color: #fff;
+    text-decoration: none;
   }
 
   .header__cart {
     position: absolute;
     right: 0;
     top: 6px;
+    a {
+      color: #ffffff;
+    }
+    a:hover {
+      color: #4541fe;
+    }
   }
   .cart__img svg {
     width: 18px;
@@ -62,6 +76,7 @@ header {
     position: absolute;
     left: -25px;
     fill: #ffffff;
+    top: 3px;
   }
 }
 .header__wraper {
@@ -113,7 +128,9 @@ header {
       display: none;
     }
 
-    #nav {
+    #nav__black {
+      padding-left: 21px;
+      width: 100%;
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;

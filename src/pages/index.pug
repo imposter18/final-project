@@ -7,8 +7,8 @@ html(lang="ru")
         link(rel="stylesheet", href="./styles/slick.css")
         link(rel="stylesheet", href="./styles/style.css")
         
-    body
-        .Home__content
+    body.Home__content
+        
             include ./pug/header.pug
             .slick__wraper
                 .slick
@@ -24,48 +24,48 @@ html(lang="ru")
                             img(src="./assets/img/image.jpg", alt="shoes reeebok")
                             .mainSlider__text Nike ACG: навстречу <br>новым открытиям
             
-            .footer__nav.homePage__nav
-                    .footer__nav-group.navGroup
+            .homePage__nav
+                    .homePage__nav-text
                         .nav-group-text <span> Фетч</span> — мультибрендовый <br> магазин модной одежды.
-                        .nav-group-text Следим за трендами и часто<br> обновляем ассортимент.
-                        .nav-group-text Доставляем по Москве<br> за день, по России —<br> за неделю.
-                    .footer__nav-group
-                        .nav-group-title
+                        p Следим за трендами и часто<br> обновляем ассортимент.
+                        p Доставляем по Москве<br> за день, по России —<br> за неделю.
+                    .homePage__nav-group
+                        .homePage__nav-group-title
                             a(href="#") Для мужчин
-                        .nav-group-items
+                        .homePage__nav-group-items
                             a(href="#") Верхняя одежда 
                             a(href="#") Рубашки и поло 
                             a(href="#") Трикотаж 
                             a(href="#") Брюки и джинсы  
                             a(href="#") Белье и носки    
-                    .footer__nav-group
-                        .nav-group-title
+                    .homePage__nav-group
+                        .homePage__nav-group-title
                             a(href="#") Для женщин
-                        .nav-group-items
+                        .homePage__nav-group-items
                             a(href="#") Верхняя одежда 
                             a(href="#") Рубашки и поло 
                             a(href="#") Трикотаж 
                             a(href="#") Платья и юбки  
                             a(href="#") Белье и носки   
-                    .footer__nav-group
-                        .nav-group-title
+                    .homePage__nav-group
+                        .homePage__nav-group-title
                             a(href="#") Обувь
-                        .nav-group-items
+                        .homePage__nav-group-items
                             a(href="#") Кроссовки и кеды 
                             a(href="#") Ботинки 
-                    .footer__nav-group
-                        .nav-group-title
+                    .homePage__nav-group
+                        .homePage__nav-group-title
                             a(href="#") Аксессуары
-                        .nav-group-items
+                        .homePage__nav-group-items
                             a(href="#") Сумки и рюкзаки  
                             a(href="#") Часы 
                             a(href="#") Бижутерия 
-                            a(href="#") Средства для ухода 
-                    .footer__nav-group
-                        .nav-group-title
+                            a(href="#") Средства для&nbsp;ухода 
+                    .homePage__nav-group
+                        .homePage__nav-group-title
                             a(href="#") Скидки
-                        .nav-group-items
-                            a(href="#") Летняя распродажа 
+                        .homePage__nav-group-items
+                            a(href="#") Летняя&nbsp;распродажа 
                             a(href="#") Коллекция 2020 
             .homePage__content1
                 .homePage-card-top
@@ -98,6 +98,6 @@ html(lang="ru")
 
 
 
-        script(src="https://code.jquery.com/jquery-3.5.1.min.js")
-        script(src="./assets/slick.min.js")
-        script(src= "./scripts/bundle.js")
+    script(src="https://code.jquery.com/jquery-3.5.1.min.js")
+    script(src="./assets/slick.min.js")
+    script(src= "./scripts/bundle.js")
