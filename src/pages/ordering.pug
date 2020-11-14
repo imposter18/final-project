@@ -5,11 +5,11 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
         link(rel="stylesheet", href="./styles/style.css")
-    body
+    body.order
         article.orderingWrapper
             .ordering__content
                 .ordering__content__items
-                    .ordering__content__items-title <h1> Фетч <span>•</span> Оформление заказа
+                    .ordering__content__items-title <h1> Фетч <span>•</span> Оформление&nbsp;заказа
                     .ordering__content__items-product
                         .content__product__card
                             .content__product__card-img
@@ -37,7 +37,7 @@ html(lang="en")
                         .totalPrice-subtitle Доставка бесплатно
                 .ordering__content__form
                     .form-buy
-                        form(action="#" method="post")
+                        form(action="./checkout-complete.html" method="post")
                             .form-buy-one
                                 label(for="form-email") Эл. почта 
                                 input(type="email" id="form-email" name="user_name" placeholder="petrov@yandex.ru" required )
@@ -57,4 +57,10 @@ html(lang="en")
                             .form-buy-button-bg
                                 .form-buy-button-text Бесплатная доставка&nbsp;курьером.<br> Оплата картой онлайн.
                                 button Оформить заказ, 276 000 ₽
-                    
+        footer.footerLite
+            .footerLite-item-one © Фетч-команда, 2019
+            .footerLite-item-two 8 800 912-11-42, звонок бесплатный
+            .footerLite-item-three
+                a(href="mailto:shop@fetch.ru") shop@fetch.ru
+            .footerLite-item-four
+                a(href="#") Правила обработки персональных данных
