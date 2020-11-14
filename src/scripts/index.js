@@ -1,4 +1,9 @@
 $(document).on('DOMContentLoaded', () => {
+
+  $('.mainSlider').on('afterChange', function(event, slick, currentSlide) {
+    $('.headerBlack').removeClass('headerWWW').eq(currentSlide).addClass('headerWWW');
+  });
+
     $('.mainSlider').slick({
     prevArrow: $('.prev'),
       nextArrow: $('.next'),
