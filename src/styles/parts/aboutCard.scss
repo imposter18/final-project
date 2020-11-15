@@ -87,6 +87,9 @@
     margin-left: 0;
   }
   .aboutCard__data-info p {
-    padding-right: 50px;
+    padding-right: 30px;
+    br {
+      display: none;
+    }
   }
 }

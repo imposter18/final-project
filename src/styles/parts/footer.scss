@@ -8,6 +8,12 @@ footer {
   a {
     color: #fff;
   }
+  .footer__bottom a:hover {
+    color: #ffffff;
+  }
+  .footer__nav a:hover {
+    opacity: 0.5;
+  }
   .nav-group-title {
     font-family: PT Sans;
     font-style: normal;

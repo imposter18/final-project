@@ -90,10 +90,59 @@
 /*!******************************!*\
   !*** ./src/scripts/index.js ***!
   \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("$(document).on('DOMContentLoaded', () => {\r\n\r\n  $('.mainSlider').on('afterChange', function(event, slick, currentSlide) {\r\n    $('.headerBlack').removeClass('headerWWW').eq(currentSlide).addClass('headerWWW');\r\n  });\r\n\r\n    $('.mainSlider').slick({\r\n    prevArrow: $('.prev'),\r\n      nextArrow: $('.next'),\r\n    });\r\n    $('.productCard__slider__one-main').slick({\r\n      slidesToShow: 1,\r\n      fade: true,\r\n      centerMode: false,\r\n      arrows: false, \r\n     \r\n    });\r\n    $('.productCard__slider__one-support').slick({\r\n      slidesToShow: 4,\r\n      slidesToScroll: 1,\r\n      asNavFor: '.productCard__slider__one-main',\r\n      dots: false,\r\n      centerMode: false,\r\n      focusOnSelect: true,\r\n      arrows: false,  \r\n    });\r\n    $('#group input:checkbox').click(function(){\r\n      if ($(this).is(':checked')) {\r\n         $('#group input:checkbox').not(this).prop('checked', false);\r\n      }\r\n    });\r\n    $('#group-checkbox input:checkbox').click(function(){\r\n      if ($(this).is(':checked')) {\r\n         $('#group-checkbox input:checkbox').not(this).prop('checked', false);\r\n      }\r\n    });\r\n    $('.productCard__slider__two-slick').slick({\r\n      prevArrow: $('.productCard__prev'),\r\n      nextArrow: $('.productCard__next'),\r\n      infinite: true,\r\n      slidesToShow: 4,\r\n      slidesToScroll: 1,\r\n      centerMode: false,\r\n      variableWidth: true,\r\n      responsive: [\r\n        {\r\n          breakpoint: 1199,\r\n          settings: {\r\n            slidesToShow: 1,\r\n            slidesToScroll: 1,\r\n            \r\n          }\r\n        }\r\n      ]\r\n    });\r\n});\r\n  \n\n//# sourceURL=webpack:///./src/scripts/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _parts_sliders__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parts/sliders */ \"./src/scripts/parts/sliders.js\");\n/* harmony import */ var _parts_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parts/header */ \"./src/scripts/parts/header.js\");\n/* harmony import */ var _parts_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parts/input */ \"./src/scripts/parts/input.js\");\n/* harmony import */ var _parts_DIKIEKOSTILI__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./parts/DIKIEKOSTILI */ \"./src/scripts/parts/DIKIEKOSTILI.js\");\n\r\n\r\n\r\n\r\n$(document).ready(() => {\r\n  Object(_parts_sliders__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  Object(_parts_header__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n  Object(_parts_input__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n  Object(_parts_DIKIEKOSTILI__WEBPACK_IMPORTED_MODULE_3__[\"default\"])()\r\n});\r\n  \n\n//# sourceURL=webpack:///./src/scripts/index.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/parts/DIKIEKOSTILI.js":
+/*!*******************************************!*\
+  !*** ./src/scripts/parts/DIKIEKOSTILI.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return KOSTILY; });\nfunction KOSTILY(){\r\nvar button = document.getElementById(\"buttonBuy\");\r\nvar i = 0;\r\nvar g = localStorage.getItem(\"good\");\r\ndocument.getElementById(\"counter\").innerHTML = g;\r\nvar i = i + +g;\r\nbutton.addEventListener('click', function(e) {  \r\n  i = (i + 1);\r\n  document.getElementById(\"counter\").innerHTML = i;\r\n  localStorage.setItem(\"good\", i);\r\n});\r\n}\n\n//# sourceURL=webpack:///./src/scripts/parts/DIKIEKOSTILI.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/parts/header.js":
+/*!*************************************!*\
+  !*** ./src/scripts/parts/header.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return headerTheme; });\nfunction headerTheme(){\r\n$('.mainSlider').on('afterChange', function(event, slick, currentSlide) {\r\n    $('.headerBlack').removeClass('headerWWW').eq(currentSlide).addClass('headerWWW');\r\n  });\r\n}\n\n//# sourceURL=webpack:///./src/scripts/parts/header.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/parts/input.js":
+/*!************************************!*\
+  !*** ./src/scripts/parts/input.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return inputCheck; });\nfunction inputCheck(){\r\n    $('#group input:checkbox').click(function(){\r\n      if ($(this).is(':checked')) {\r\n         $('#group input:checkbox').not(this).prop('checked', false);\r\n      }\r\n    });\r\n    $('#group-checkbox input:checkbox').click(function(){\r\n      if ($(this).is(':checked')) {\r\n         $('#group-checkbox input:checkbox').not(this).prop('checked', false);\r\n      }\r\n    });\r\n  }\r\n   \n\n//# sourceURL=webpack:///./src/scripts/parts/input.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/parts/sliders.js":
+/*!**************************************!*\
+  !*** ./src/scripts/parts/sliders.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return initSliders; });\nfunction initSliderHomepage() {\r\n  $('.mainSlider').slick({\r\n    prevArrow: $('.prev'),\r\n    nextArrow: $('.next')\r\n  });\r\n}\r\nfunction initSliderProductCardOne() {\r\n  $('.productCard__slider__one-main').slick({\r\n      slidesToShow: 1,\r\n      fade: true,\r\n      centerMode: false,\r\n      arrows: false, \r\n    });\r\n  \r\n    $('.productCard__slider__one-support').slick({\r\n      slidesToShow: 4,\r\n      slidesToScroll: 1,\r\n      asNavFor: '.productCard__slider__one-main',\r\n      dots: false,\r\n      centerMode: false,\r\n      focusOnSelect: true,\r\n      arrows: false,  \r\n    });\r\n  }\r\n  function initSliderProductCardTwo() {\r\n  $('.productCard__slider__two-slick').slick({\r\n      prevArrow: $('.productCard__prev'),\r\n      nextArrow: $('.productCard__next'),\r\n      infinite: true,\r\n      slidesToShow: 4,\r\n      slidesToScroll: 1,\r\n      centerMode: false,\r\n      variableWidth: true,\r\n      responsive: [\r\n        {\r\n          breakpoint: 1199,\r\n          settings: {\r\n            slidesToShow: 1,\r\n            slidesToScroll: 1,\r\n            \r\n          }\r\n        }\r\n      ]\r\n    });}\r\n\r\nfunction initSliders() {\r\n    initSliderHomepage();\r\n    initSliderProductCardOne();\r\n    initSliderProductCardTwo();\r\n  }\n\n//# sourceURL=webpack:///./src/scripts/parts/sliders.js?");
 
 /***/ })
 

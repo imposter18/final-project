@@ -1,6 +1,9 @@
 .slick__wraper {
   grid-area: slick;
 }
+.slick-slide:focus {
+  outline: none;
+}
 
 .slick {
   position: relative;
@@ -65,11 +68,53 @@
   left: 152px;
   z-index: 10;
 }
+.mainSlider__text-mobile {
+  display: none;
+}
 @media (max-width: 1199px) and (min-width: 320px) {
   .slick {
     width: 100%;
   }
   .mainSlider__text {
     display: none;
+
+    .slick-slide img {
+      display: block;
+      object-fit: none;
+      object-position: -338px;
+    }
+  }
+  .headerWWW {
+    background: #000000;
+    a {
+      color: #ffffff;
+    }
+    .cart__img svg {
+      fill: #ffffff;
+    }
+  }
+  .prev {
+    left: 3px;
+    top: 304px;
+  }
+  .next {
+    right: 3px;
+    top: 301px;
+  }
+  .mainSlider__text-mobile {
+    display: inline-block;
+    position: absolute;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 62px;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+    left: 5%;
+    top: 65.5%;
+  }
+  .mainSlider__list img {
+    object-fit: none;
+    object-position: -337px -7px;
   }
 }

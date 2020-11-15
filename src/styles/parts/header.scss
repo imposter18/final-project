@@ -26,9 +26,6 @@ header {
       line-height: 21px;
       text-decoration-line: underline;
     }
-    a:hover {
-      color: #4541fe;
-    }
   }
   .header__bar {
     position: absolute;
@@ -42,7 +39,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    // overflow-x: scroll;
+
     width: 615px;
     height: 31px;
     left: 152px;
@@ -54,7 +51,6 @@ header {
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
-    // color: #fff;
     text-decoration: none;
   }
 
@@ -64,7 +60,7 @@ header {
     top: 6px;
 
     a:hover {
-      color: #4541fe;
+      opacity: 0.5;
     }
   }
   .cart__img svg {
@@ -76,6 +72,10 @@ header {
     top: 3px;
   }
 }
+.nav__opacity a:hover {
+  opacity: 0.5;
+}
+
 .header__wraper {
   position: absolute;
 }
@@ -94,6 +94,12 @@ header {
   .cart__img svg {
     fill: #000;
   }
+  .nav__opacity a:hover {
+    color: #4541fe;
+  }
+  .header__cart a:hover {
+    color: #4541fe;
+  }
 }
 
 .headerWhite {
@@ -104,6 +110,9 @@ header {
     a {
       color: black;
     }
+    a:hover {
+      color: #4541fe;
+    }
   }
   .header__item-white {
     color: black;
@@ -111,15 +120,55 @@ header {
   .cart__img-white svg {
     fill: black;
   }
+  .cart__img svg {
+    fill: #000;
+  }
+}
+#counter {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 8px;
+  right: 120px;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.counterBG {
+  width: 16px;
+  height: 16px;
+  background: #4541fe;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  right: 117px;
+}
+.counterBG:hover {
+  background: #4541fe;
+}
+.headerSVG svg {
+  fill: #000;
 }
 @media (max-width: 1199px) and (min-width: 320px) {
   body {
     width: auto;
   }
-  // header {
-  //   width: 100%;
-  // }
-
+  .counterBG {
+    top: -7px;
+    right: 4px;
+  }
+  #counter {
+    bottom: -9px;
+    right: 9px;
+  }
+  .headerSVG svg {
+    fill: #000;
+  }
+  .cart__img-white svg {
+    fill: #000;
+  }
   header {
     width: 100%;
     margin: auto;
@@ -134,10 +183,10 @@ header {
       width: auto;
     }
     #cart .cart__img svg {
-      left: -30px;
-      top: 3px;
+      left: -26px;
+      top: 2px;
     }
-    #cart a {
+    .mobileNone {
       display: none;
     }
 

@@ -18,7 +18,7 @@ html(lang="en")
                         .productCard__switch#group
                             .productCard__switch-title Цвет
                             .productCard__switch-one
-                                input(type="checkbox"  class="Card__switch qwerty" id="switch__card")
+                                input(type="checkbox"  class="Card__switch qwerty" id="switch__card" autofocus )
                                 label(for="switch__card")
                             .productCard__switch-two
                                 input(type="checkbox" class=" Card__switch qwerty" id="switch__card-two")
@@ -41,7 +41,7 @@ html(lang="en")
                             a(href="#openModal") Таблица размеров
                             #openModal.modalDialog
                                 .modalWrapper
-                                    a(href="#close" title="Закрыть" class="close") 
+                                    a(href="#close" title="Закрыть" class="close")
                                         include ../assets/icon/cross.svg
                                     <h2> Таблица размеров</h2>
                                     .table__size
@@ -79,7 +79,7 @@ html(lang="en")
                                                 
                         .productCard__buy__button
                             form(action="./ordering.html")
-                                button Купить, 92 000 ₽        
+                                button(id='buttonBuy') Купить, 92 000 ₽        
                     .productCard__about__info
                         .productCard__about__info-title-one
                             .about__info-card Материал
@@ -93,7 +93,7 @@ html(lang="en")
                                 | Деконструктивный и авангардный дизайн с уникальными концепциями и нетрадиционным мастерством.
                                 p В качестве материала используются два вида кожи. Верх дополнен деталями из сетчатого материала и текстиля. 
                                 p Грубые и многослойные кроссовки показывают отличие от традиционного аккуратного стиля создания обуви. Они оснащены раскрашенной вручную резиновой подошвой с брызгами и потеками. 
-                                p Оригинальная слегка асимметричная система шнуровки и фирменный стежок на заднике завершают уникальный внешний вид.
+                                p Оригинальная слегка асимметричная система шнуровки и&nbsp;фирменный стежок на заднике завершают уникальный внешний вид.
                             
                         .productCard__about__info-parts
                             .about__info-card Детали

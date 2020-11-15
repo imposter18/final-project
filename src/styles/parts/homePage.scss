@@ -30,12 +30,18 @@
   justify-content: space-between;
   margin: 48px 193px 64px 152px;
   box-sizing: border-box;
+  .homePage__nav-group a {
+    color: #4541fe;
+  }
+  .homePage__nav-group a:hover {
+    color: #000000;
+  }
 
   .homePage__nav-group-title {
     font-weight: bold;
     font-size: 18px;
     line-height: 23px;
-    color: #4541fe;
+
     margin-bottom: 3px;
   }
   .homePage__nav-text {
@@ -51,47 +57,7 @@
     }
   }
 }
-//   .footer__nav-group {
-//     margin-right: 10px;
-//   }
-//   .nav-group-items {
-//     width: 117px;
-//     height: 137px;
-//     display: flex;
-//     flex-direction: column;
-//     // justify-content: space-between;
-//     margin: 10px auto 0px 9px;
-//   }
-//   .nav-group-items a {
-//     font-size: 16px;
-//     line-height: 21px;
-//     text-decoration-line: underline;
-//     color: #4541fe;
-//   }
-//   .nav-group-title {
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 18px;
-//     line-height: 23px;
-//     text-decoration-line: underline;
-//     color: #4541fe;
-//   }
-//   .nav-group-text {
-//     margin-right: 33px;
-//     font-size: 18px;
-//     line-height: 23px;
-//     color: #000000;
-//     span {
-//       font-weight: bold;
-//     }
-//   }
-//   .nav-group-text:not(:first-child) {
-//     margin-top: 16px;
-//   }
-//   .footer__nav-group:last-child {
-//     margin-right: 20px;
-//   }
-// }
+
 // content
 .homePage__content1 {
   grid-area: content1;
@@ -118,6 +84,15 @@
     width: 655px;
     background: #ffe9fd;
   }
+}
+.homePage__content1 a:hover {
+  color: #4541fe;
+}
+.homePage__content2 a:hover {
+  color: #4541fe;
+}
+.homePage__content3 a:hover {
+  color: #4541fe;
 }
 .homePage__content3 {
   grid-area: content3;
@@ -184,6 +159,9 @@
 .homePage-card-shoes-title {
   padding-top: 24px;
   padding-left: 23px;
+
+  z-index: 10;
+  position: relative;
 }
 .homePage-card-shoes-subtitle {
   padding-top: 8px;
@@ -243,28 +221,6 @@
     .homePage__nav-group:nth-child(3) {
       margin-left: 5px;
     }
-
-    // .footer__nav-group {
-    //   display: flex;
-    //   flex-direction: column;
-    //   margin-bottom: 23px;
-    // }
-    // .homePage__nav .nav-group-text:not(:first-child) {
-    //   margin-top: 16px;
-    // }
-    // .footer__nav-group:not(:first-child) {
-    //   margin-top: 10px;
-    // }
-    // .nav-group-items {
-    //   margin: 13px auto -15px 9px;
-    //   a {
-    //     margin-top: 5px;
-    //     margin-bottom: 2px;
-    //   }
-    // }
-    // .homePage__nav .nav-group-title {
-    //   margin-top: 0px;
-    // }
   }
   .homePage__content1 {
     margin: 0;

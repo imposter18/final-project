@@ -9,7 +9,9 @@ html(lang="en")
         article.orderingWrapper
             .ordering__content
                 .ordering__content__items
-                    .ordering__content__items-title <h1> Фетч <span>•</span> Оформление&nbsp;заказа
+                    .ordering__content__items-title 
+                        a(href="./index.html") <h1> Фетч 
+                        |<span>•</span> Оформление&nbsp;заказа
                     .ordering__content__items-product
                         .content__product__card
                             .content__product__card-img
@@ -64,3 +66,5 @@ html(lang="en")
                 a(href="mailto:shop@fetch.ru") shop@fetch.ru
             .footerLite-item-four
                 a(href="#") Правила обработки персональных данных
+        script(src="https://code.jquery.com/jquery-3.5.1.min.js")
+        script(src= "./scripts/bundle.js")
