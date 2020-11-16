@@ -6,6 +6,6 @@ $(document).ready(() => {
   initSliders();
   headerTheme();
   inputCheck();
-  KOSTILY()
+  KOSTILY();
 });
   

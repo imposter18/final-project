@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-html(lang="en")
+html(lang="ru")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
+        title fetch
         link(rel="stylesheet", href="./styles/style.css")
     body.order
         article.orderingWrapper
@@ -52,13 +52,11 @@ html(lang="en")
                                 label(for="form-city") Город 
                                 input(type="text" id="form-city" name="user_name" required placeholder="Москва" )
                             .form-buy-four
-                                //- label(for="form-place") Адрес
-                                //- input(type="text" id="form-place" name="user_name" required )
                                 .form-buy-four-title Адрес
                                 textarea(placeholder="Тимирязевская, 32, квартира 99, вход со двора")
                             .form-buy-button-bg
                                 .form-buy-button-text Бесплатная доставка&nbsp;курьером.<br> Оплата картой онлайн.
-                                button Оформить заказ, 276 000 ₽
+                                button(id="order") Оформить заказ, 276 000 ₽
         footer.footerLite
             .footerLite-item-one © Фетч-команда, 2019
             .footerLite-item-two 8 800 912-11-42, звонок бесплатный
