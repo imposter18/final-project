@@ -15,28 +15,30 @@ html(lang="ru")
                         .productCard__about__title-text <h1> Maison Margiela Fusion Low Sneakers
                         .productCard__about__subtitle-text Кроссовки 
                     .productCard__about__buy
-                        .productCard__switch#group
-                            .productCard__switch-title Цвет
-                            .productCard__switch-one
-                                input(type="radio"  class="Card__switch qwerty" id="switch__card" autofocus )
-                                label(for="switch__card")
-                            .productCard__switch-two
-                                input(type="checkbox" class=" Card__switch qwerty" id="switch__card-two")
-                                label(for="switch__card-two")
+                        form(action="#")
+                            .productCard__switch#group
+                                .productCard__switch-title Цвет
+                                .productCard__switch-one
+                                    input(type="radio"  class="Card__switch qwerty" id="switch__card" name="radio-group" checked )
+                                    label(for="switch__card")
+                                .productCard__switch-two
+                                    input(type="radio" class=" Card__switch qwerty" id="switch__card-two" name="radio-group")
+                                    label(for="switch__card-two")
                         .productCard__switch__size#group-checkbox
-                            .productCard__switch__size-title Размер US
-                            .productCard__switch__size-one
-                                input(type="checkbox"  class=" Card__switch" id="switch__size-one")
-                                label(for="switch__size-one")
-                            .productCard__switch__size-two
-                                input(type="checkbox"  class=" Card__switch" id="switch__size-two")
-                                label(for="switch__size-two")
-                            .productCard__switch__size-three
-                                input(type="checkbox"  class=" Card__switch" id="switch__size-three")
-                                label(for="switch__size-three")
-                            .productCard__switch__size-four
-                                input(type="checkbox"  class=" Card__switch" id="switch__size-four")
-                                label(for="switch__size-four")
+                            form(action="#")
+                                .productCard__switch__size-title Размер US
+                                .productCard__switch__size-one
+                                    input(type="radio"  class=" Card__switch" id="switch__size-one" name="radio-group-two" checked )
+                                    label(for="switch__size-one")
+                                .productCard__switch__size-two
+                                    input(type="radio"  class=" Card__switch" id="switch__size-two" name="radio-group-two")
+                                    label(for="switch__size-two")
+                                .productCard__switch__size-three
+                                    input(type="radio"  class=" Card__switch" id="switch__size-three" name="radio-group-two")
+                                    label(for="switch__size-three")
+                                .productCard__switch__size-four
+                                    input(type="radio"  class=" Card__switch" id="switch__size-four" name="radio-group-two")
+                                    label(for="switch__size-four")
                         .productCard__about__buy-table
                             a(href="#openModal") Таблица размеров
                             #openModal.modalDialog

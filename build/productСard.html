@@ -36,35 +36,39 @@
             <div class="productCard__about__subtitle-text">Кроссовки </div>
           </div>
           <div class="productCard__about__buy">
-            <div class="productCard__switch" id="group">
-              <div class="productCard__switch-title">Цвет</div>
-              <div class="productCard__switch-one">
-                <input class="Card__switch qwerty" type="radio" id="switch__card" autofocus="autofocus"/>
-                <label for="switch__card"></label>
+            <form action="#">
+              <div class="productCard__switch" id="group">
+                <div class="productCard__switch-title">Цвет</div>
+                <div class="productCard__switch-one">
+                  <input class="Card__switch qwerty" type="radio" id="switch__card" name="radio-group" checked="checked"/>
+                  <label for="switch__card"></label>
+                </div>
+                <div class="productCard__switch-two">
+                  <input class=" Card__switch qwerty" type="radio" id="switch__card-two" name="radio-group"/>
+                  <label for="switch__card-two"></label>
+                </div>
               </div>
-              <div class="productCard__switch-two">
-                <input class=" Card__switch qwerty" type="checkbox" id="switch__card-two"/>
-                <label for="switch__card-two"></label>
-              </div>
-            </div>
+            </form>
             <div class="productCard__switch__size" id="group-checkbox">
-              <div class="productCard__switch__size-title">Размер US</div>
-              <div class="productCard__switch__size-one">
-                <input class=" Card__switch" type="checkbox" id="switch__size-one"/>
-                <label for="switch__size-one"></label>
-              </div>
-              <div class="productCard__switch__size-two">
-                <input class=" Card__switch" type="checkbox" id="switch__size-two"/>
-                <label for="switch__size-two"></label>
-              </div>
-              <div class="productCard__switch__size-three">
-                <input class=" Card__switch" type="checkbox" id="switch__size-three"/>
-                <label for="switch__size-three"></label>
-              </div>
-              <div class="productCard__switch__size-four">
-                <input class=" Card__switch" type="checkbox" id="switch__size-four"/>
-                <label for="switch__size-four"></label>
-              </div>
+              <form action="#">
+                <div class="productCard__switch__size-title">Размер US</div>
+                <div class="productCard__switch__size-one">
+                  <input class=" Card__switch" type="radio" id="switch__size-one" name="radio-group-two" checked="checked"/>
+                  <label for="switch__size-one"></label>
+                </div>
+                <div class="productCard__switch__size-two">
+                  <input class=" Card__switch" type="radio" id="switch__size-two" name="radio-group-two"/>
+                  <label for="switch__size-two"></label>
+                </div>
+                <div class="productCard__switch__size-three">
+                  <input class=" Card__switch" type="radio" id="switch__size-three" name="radio-group-two"/>
+                  <label for="switch__size-three"></label>
+                </div>
+                <div class="productCard__switch__size-four">
+                  <input class=" Card__switch" type="radio" id="switch__size-four" name="radio-group-two"/>
+                  <label for="switch__size-four"></label>
+                </div>
+              </form>
             </div>
             <div class="productCard__about__buy-table"><a href="#openModal">Таблица размеров</a>
               <div class="modalDialog" id="openModal">
