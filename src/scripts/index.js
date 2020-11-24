@@ -5,7 +5,7 @@ import KOSTILY from './parts/DIKIEKOSTILI'
 $(document).ready(() => {
   initSliders();
   headerTheme();
-  inputCheck();
+  // inputCheck();
   KOSTILY();
 });
   
